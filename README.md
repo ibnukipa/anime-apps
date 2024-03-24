@@ -60,6 +60,12 @@ This is one way to run your app — you can also run it directly from within And
 
 # Libraries
 
+### react-navigation
+This package is required to enable navigation in react native app. This navigation lib is the most use of the others. It's easy to use and the concept is quite simple. In the latest version, It also already support for native navigation. The drawback is this navigation library wasn't implemented from native at first place. So the integration with native is done by the hacky way.
+
+### react-native-safe-area-context
+This package is required to handle the safe area in react native app. This package is used to handle the safe area in the app. It's quite simple to use. You just need to wrap the root component with SafeAreaProvider and use SafeAreaView in the component.
+
 # Previews
 
 # Future Improvements

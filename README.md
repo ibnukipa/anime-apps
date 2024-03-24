@@ -44,6 +44,20 @@ If everything is set up _correctly_, you should see your new app running in your
 
 This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
 
+# Project Structure
+- **App.js**: The main entry point of the application.
+- **app**: Contains the source code of the application.
+- **apis**: Contains APIs used in the application.
+- **assets**: Contains icons, images, fonts, and other assets used in the application.
+- **components**: Contains reusable components used in the application.
+- **constants**: Contains constants files used in the application.
+- **hooks**: Contains custom hooks used in the application.
+- **navigation**: Contains the navigation configuration of the application.
+- **screens**: Contains the screens of the application.
+- **services**: Contains the services used in the application.
+- **types**: Contains types used in the application.
+- **utils**: Contains utility functions used in the application.
+
 # Libraries
 
 # Previews

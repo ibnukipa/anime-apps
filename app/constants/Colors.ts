@@ -10,6 +10,7 @@ export const Colors = {
   neutralWhite: '#FFF',
   neutralWhite20: 'rgba(255, 255, 255, 0.2)',
   neutralWhite50: 'rgba(255, 255, 255, 0.5)',
+  neutralWhite80: 'rgba(255, 255, 255, 0.8)',
 
   grayPlus2: '#222223',
   grayPlus1: '#747474',

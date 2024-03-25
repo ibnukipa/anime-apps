@@ -1,7 +1,7 @@
 type RootNavigationParams = {
   AnimeList: undefined;
   AnimeDetails: {
-    id: string;
+    id: number;
   };
   AnimeFavorite: undefined;
 };

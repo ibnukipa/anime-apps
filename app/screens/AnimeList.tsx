@@ -1,5 +1,5 @@
 import React, {useCallback} from 'react';
-import {FlatList, View} from 'react-native';
+import {FlatList, StatusBar, View} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 
 import {
@@ -39,6 +39,7 @@ const AnimeList = () => {
 
   return (
     <View style={containerStyle.container}>
+      <StatusBar barStyle={'light-content'} />
       <PrimaryHeader
         title={'Anime'}
         buttonTitle={'My Favorite'}

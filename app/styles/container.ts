@@ -25,4 +25,23 @@ export const containerStyle = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  spaceBetweenContainer: {
+    flex: 1,
+    justifyContent: 'space-between',
+  },
+  headerFloatingContainer: {
+    paddingRight: 8,
+    paddingVertical: 8,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  headerClose: {
+    backgroundColor: Colors.neutralWhite,
+  },
+  headerRatingContainer: {
+    borderRadius: 12,
+    paddingVertical: 4,
+    paddingHorizontal: 8,
+  },
 });

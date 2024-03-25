@@ -1,21 +1,32 @@
-import React, {memo} from 'react';
-import {ImageBackground, View} from 'react-native';
+import React, {memo, useCallback} from 'react';
+import {
+  ImageBackground,
+  TouchableHighlight,
+  View,
+} from 'react-native';
 import {useAnimeStore} from '../../../stores';
 import {Text} from '../../Text';
 import {AnimeCardProps} from './types.ts';
 import styles from './styles.ts';
 import {BlurView} from '@react-native-community/blur';
 import {Icon, IconSize} from '../../Icon';
+import {useNavigation} from '@react-navigation/native';
+import {RootNavigationProp} from '../../../types';
 
 const AnimeCard: React.FC<AnimeCardProps> = ({id}) => {
+  const navigation = useNavigation<RootNavigationProp>();
   const anime = useAnimeStore(state => state.anime[id]);
+
+  const onPress = useCallback(() => {
+    navigation.navigate('AnimeDetails', {id});
+  }, [id, navigation]);
 
   if (!anime) {
     return <View style={styles.emptyContainer} />;
   }
 
   return (
-    <View style={styles.container}>
+    <TouchableHighlight onPress={onPress} style={styles.container}>
       <ImageBackground
         style={styles.imageBackground}
         resizeMode={'cover'}
@@ -66,7 +77,7 @@ const AnimeCard: React.FC<AnimeCardProps> = ({id}) => {
           </BlurView>
         </View>
       </ImageBackground>
-    </View>
+    </TouchableHighlight>
   );
 };
 

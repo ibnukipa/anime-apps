@@ -11,6 +11,7 @@ const styles = StyleSheet.create({
     borderRadius: 16,
     flexDirection: 'row',
     alignItems: 'center',
+    marginBottom: 8,
   },
   textInput: {
     flex: 1,

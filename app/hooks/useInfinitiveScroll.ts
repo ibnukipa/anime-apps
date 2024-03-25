@@ -71,8 +71,11 @@ const useInfinitiveScroll = <D>({fetcher, query, insert}: Props<D>) => {
   );
 
   const refresh = useCallback(() => {
-    setIsLoading(true);
+    setData([]);
+    setDataTotal(0);
     setPage(1);
+    setLimit(10);
+    setIsLoading(true);
     setIsLastPage(false);
 
     fetch(1, false, limit);

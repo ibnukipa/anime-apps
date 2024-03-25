@@ -58,12 +58,12 @@ export const useButtonStyle = (
       case ButtonVariant.SECONDARY:
         return [
           {
-            backgroundColor: Colors.neutralWhite,
+            backgroundColor: 'transparent',
             borderWidth: 1,
             borderColor: mainColor,
           },
           {
-            backgroundColor: Colors.neutralWhite,
+            backgroundColor: 'transparent',
             borderWidth: 1,
             borderColor: plus1Color,
           },

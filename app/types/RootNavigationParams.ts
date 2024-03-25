@@ -3,7 +3,6 @@ type RootNavigationParams = {
   AnimeDetails: {
     id: number;
   };
-  AnimeFavorite: undefined;
 };
 
 export default RootNavigationParams;

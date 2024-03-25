@@ -6,7 +6,7 @@ import {
 } from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
 
-import {AnimeList, AnimeDetails, AnimeFavorite} from '../screens';
+import {AnimeList, AnimeDetails} from '../screens';
 import {RootNavigationParams} from '../types';
 
 const RootStack = createStackNavigator<RootNavigationParams>();
@@ -20,11 +20,6 @@ const ScreenModalPresentationOptions: StackNavigationOptions = {
 };
 const ScreenScaleCenterOptions: StackNavigationOptions = {
   ...TransitionPresets.ScaleFromCenterAndroid,
-};
-const ScreenSlideRightOptions: StackNavigationOptions = {
-  ...TransitionPresets.SlideFromRightIOS,
-  cardShadowEnabled: true,
-  cardOverlayEnabled: true,
 };
 
 const RootNavigation: React.FC = () => {
@@ -53,11 +48,6 @@ const RootNavigation: React.FC = () => {
           name={'AnimeDetails'}
           component={AnimeDetails}
           options={ScreenModalPresentationOptions}
-        />
-        <RootStack.Screen
-          name={'AnimeFavorite'}
-          component={AnimeFavorite}
-          options={ScreenSlideRightOptions}
         />
       </RootStack.Navigator>
     </NavigationContainer>

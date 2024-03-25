@@ -15,7 +15,7 @@ const useInfinitiveScroll = <D>({fetcher, query, insert}: Props<D>) => {
   const [data, setData] = useState<Array<number>>([]);
   const [dataTotal, setDataTotal] = useState(0);
   const [page, setPage] = useState<number>(1);
-  const [limit, setLimit] = useState<number>(15);
+  const [limit, setLimit] = useState<number>(10);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [isFetching, setIsFetching] = useState<boolean>(false);
   const [isLastPage, setIsLastPage] = useState<boolean>(false);

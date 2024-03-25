@@ -76,4 +76,5 @@ This package is required to handle the safe area in react native app. This packa
 - Enable Anime Search
 - Advanced anime filtering and sorting
 - Loading state with skeleton loading
+- Favorite anime screen and styling
 

@@ -16,18 +16,13 @@ import {AnimeService} from '../services';
 import {useAnimeStore} from '../stores';
 
 const AnimeList = () => {
-  const navigation = useNavigation<RootNavigationProp>();
-  const {add: insertAnime} = useAnimeStore();
+  const {add: insertAnime, favoriteAnime} = useAnimeStore();
 
   const {data, isLastPage, isFetching, isLoading, fetchMore} =
     useInfinitiveScroll<Anime>({
       fetcher: AnimeService.getAnimeSearchApi,
       insert: insertAnime,
     });
-
-  const navigateToFavoriteAnime = useCallback(() => {
-    navigation.navigate('AnimeFavorite');
-  }, [navigation]);
 
   const renderItem = useCallback(({item}: {item: number}) => {
     return <AnimeCard id={item} />;
@@ -42,8 +37,7 @@ const AnimeList = () => {
       <StatusBar barStyle={'light-content'} />
       <PrimaryHeader
         title={'Anime'}
-        buttonTitle={'My Favorite'}
-        buttonAction={navigateToFavoriteAnime}
+        buttonTitle={`${favoriteAnime.length} Favorites`}
       />
       <View style={containerStyle.innerContainer}>
         {isLoading ? (

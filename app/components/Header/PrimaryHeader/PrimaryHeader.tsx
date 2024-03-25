@@ -7,14 +7,14 @@ import {Button, ButtonSize} from '../../Button';
 import styles from './styles.ts';
 import {Props} from './types.ts';
 
-const PrimaryHeader: React.FC<Props> = ({title, buttonTitle, buttonAction}) => {
+const PrimaryHeader: React.FC<Props> = ({title, buttonTitle}) => {
   return (
     <SafeAreaView edges={['top', 'left', 'right']}>
       <View style={styles.container}>
         <Text style={styles.title} fontWeight={'bold'}>
           {title}
         </Text>
-        <Button size={ButtonSize.TINY} onPress={buttonAction}>
+        <Button size={ButtonSize.TINY}>
           {buttonTitle}
         </Button>
       </View>

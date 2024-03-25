@@ -61,6 +61,10 @@ const styles = StyleSheet.create({
     marginTop: 16,
     paddingHorizontal: 24,
   },
+  favoriteContainer: {
+    marginTop: 16,
+    paddingHorizontal: 24,
+  },
 });
 
 export default styles;

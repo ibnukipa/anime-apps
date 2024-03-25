@@ -75,6 +75,9 @@ A small, fast and scalable bearbones state-management solution using simplified 
 This package is required to enable blur effect in react native app. This package is used to enable blur effect in the app. It's quite simple to use. You just need to wrap the component with BlurView and set the blurType props.
 
 # Previews
+https://github.com/ibnukipa/anime-apps/assets/12580174/c64634b8-12f8-4a84-be1e-ba4984367796
+
+
 
 # Future Improvements
 - Enable splash screen

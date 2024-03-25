@@ -19,6 +19,7 @@ const useInfinitiveScroll = <D>({fetcher, query, insert}: Props<D>) => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [isFetching, setIsFetching] = useState<boolean>(false);
   const [isLastPage, setIsLastPage] = useState<boolean>(false);
+  const [isError, setIsError] = useState<boolean>(false);
 
   const fetch = useCallback(
     (currentPage: number, currentIsLastPage: boolean, currentLimit: number) => {
@@ -64,7 +65,11 @@ const useInfinitiveScroll = <D>({fetcher, query, insert}: Props<D>) => {
             setIsFetching(false);
           }
         };
-        doFetch();
+        doFetch().catch(() => {
+          setIsLoading(false);
+          setIsFetching(false);
+          setIsError(true);
+        });
       }
     },
     [fetcher, query, insert],
@@ -77,6 +82,7 @@ const useInfinitiveScroll = <D>({fetcher, query, insert}: Props<D>) => {
     setLimit(10);
     setIsLoading(true);
     setIsLastPage(false);
+    setIsError(false);
 
     fetch(1, false, limit);
   }, [fetch, limit]);
@@ -102,6 +108,7 @@ const useInfinitiveScroll = <D>({fetcher, query, insert}: Props<D>) => {
     refresh,
     fetchMore,
     setLimit,
+    isError,
   };
 };
 

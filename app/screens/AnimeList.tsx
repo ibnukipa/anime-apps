@@ -19,7 +19,7 @@ const AnimeList = () => {
   const [searchQuery, setSearchQuery] = useState<string>('');
   const {add: insertAnime, favoriteAnime} = useAnimeStore();
 
-  const {data, isLastPage, isFetching, isLoading, fetchMore} =
+  const {data, isLastPage, isFetching, isLoading, fetchMore, refresh, isError} =
     useInfinitiveScroll<Anime>({
       fetcher: AnimeService.getAnimeSearchApi,
       insert: insertAnime,
@@ -62,6 +62,8 @@ const AnimeList = () => {
               <InfinitiveFooterList
                 isFetching={isFetching}
                 isLastPage={isLastPage}
+                isError={isError}
+                retry={refresh}
               />
             }
           />

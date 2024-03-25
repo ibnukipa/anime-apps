@@ -12,6 +12,9 @@ const styles = StyleSheet.create({
   captionIcon: {
     marginRight: 8,
   },
+  errorButton: {
+    marginTop: 16,
+  },
 });
 
 export default styles;

@@ -57,7 +57,6 @@ This is one way to run your app — you can also run it directly from within And
 - **stores**: Contains stores/db used in the application.
 - **styles**: Contains general styles used in the application.
 - **types**: Contains types used in the application.
-- **utils**: Contains utility functions used in the application.
 
 # Design Pattern
 
@@ -69,12 +68,21 @@ This package is required to enable navigation in react native app. This navigati
 ### react-native-safe-area-context
 This package is required to handle the safe area in react native app. This package is used to handle the safe area in the app. It's quite simple to use. You just need to wrap the root component with SafeAreaProvider and use SafeAreaView in the component.
 
+### zustand
+A small, fast and scalable bearbones state-management solution using simplified flux principles. Has a comfy API based on hooks, isn't boilerplatey or opinionated.
+
+### @react-native-community/blur
+This package is required to enable blur effect in react native app. This package is used to enable blur effect in the app. It's quite simple to use. You just need to wrap the component with BlurView and set the blurType props.
+
 # Previews
 
 # Future Improvements
+- Enable splash screen
+- Enable app icon
 - Enable dark-mode styling
 - Enable Anime Search
 - Advanced anime filtering and sorting
 - Loading state with skeleton loading
 - Favorite anime screen and styling
+- Onboarding screen
 

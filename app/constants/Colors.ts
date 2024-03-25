@@ -8,6 +8,8 @@ export const Colors = {
   neutralBorder: '#E3E3E4',
   neutralContainer: '#F3F5F6',
   neutralWhite: '#FFF',
+  neutralWhite20: 'rgba(255, 255, 255, 0.2)',
+  neutralWhite50: 'rgba(255, 255, 255, 0.5)',
 
   grayPlus2: '#222223',
   grayPlus1: '#747474',
@@ -24,11 +26,20 @@ export const Colors = {
   victoriaBlueMin2: '#B6CDE2',
   victoriaBlueMin3: '#DBE6F1',
   victoriaBlueMin4: '#E7EEF5',
+
+  citrusYellowPlus2: '#605636',
+  citrusYellowPlus1: '#968654',
+  citrusYellow: '#D6BF78',
+  citrusYellowMin1: '#E8DCB5',
+  citrusYellowMin2: '#F3ECD7',
+  citrusYellowMin3: '#FBF9F2',
+  citrusYellowMin4: '#FBF9F2',
 };
 
 export const ColorSchemes = {
   gray: 'gray',
   victoriaBlue: 'victoriaBlue',
+  citrusYellow: 'citrusYellow',
 };
 
 export const ColorSchemeGradients = {

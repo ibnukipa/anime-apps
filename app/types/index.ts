@@ -4,3 +4,4 @@ export type {default as Pagination} from './Pagination.ts';
 export type {default as RootNavigationParams} from './RootNavigationParams.ts';
 export type {default as RootNavigationProp} from './RootNavigationProp.ts';
 
+export type * from './models';

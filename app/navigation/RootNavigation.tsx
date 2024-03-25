@@ -23,6 +23,8 @@ const ScreenScaleCenterOptions: StackNavigationOptions = {
 };
 const ScreenSlideRightOptions: StackNavigationOptions = {
   ...TransitionPresets.SlideFromRightIOS,
+  cardShadowEnabled: true,
+  cardOverlayEnabled: true,
 };
 
 const RootNavigation: React.FC = () => {

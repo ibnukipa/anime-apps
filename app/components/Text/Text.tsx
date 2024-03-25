@@ -5,7 +5,7 @@ import {useTextStyle} from '../../hooks';
 import {TextProps} from './types.ts';
 
 const Text: React.FC<TextProps> = ({
-  color = 'neutralText',
+  color = 'neutralWhite',
   style,
   bold,
   fontWeight = 'regular',

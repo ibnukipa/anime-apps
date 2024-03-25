@@ -47,7 +47,6 @@ This is one way to run your app — you can also run it directly from within And
 # Project Structure
 - **App.js**: The main entry point of the application.
 - **app**: Contains the source code of the application.
-- **apis**: Contains APIs used in the application.
 - **assets**: Contains icons, images, fonts, and other assets used in the application.
 - **components**: Contains reusable components used in the application.
 - **constants**: Contains constants files used in the application.
@@ -55,8 +54,12 @@ This is one way to run your app — you can also run it directly from within And
 - **navigation**: Contains the navigation configuration of the application.
 - **screens**: Contains the screens of the application.
 - **services**: Contains the services used in the application.
+- **stores**: Contains stores/db used in the application.
+- **styles**: Contains general styles used in the application.
 - **types**: Contains types used in the application.
 - **utils**: Contains utility functions used in the application.
+
+# Design Pattern
 
 # Libraries
 
@@ -69,3 +72,8 @@ This package is required to handle the safe area in react native app. This packa
 # Previews
 
 # Future Improvements
+- Enable dark-mode styling
+- Enable Anime Search
+- Advanced anime filtering and sorting
+- Loading state with skeleton loading
+

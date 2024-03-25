@@ -44,7 +44,7 @@ const Button: React.FC<ButtonProps> = ({
           color={isPressing || isLoading ? childrenPressedColor : childrenColor}
           bold
           style={textSizeStyle}>
-          {children.toUpperCase()}
+          {children}
         </Text>
       );
     }
